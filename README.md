@@ -1,4 +1,5 @@
 ﻿# eco-ai-green-ai-assistant
 
 ## Live Demo
-https://fakiyamadhat65-star-eco-ai-green-ai-assistant.streamlit.app
+https://eco-ai-green-ai-assistant-5qkt2agotgnsaaucdt2cdq.streamlit.app/
+
