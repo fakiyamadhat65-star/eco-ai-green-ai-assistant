@@ -1,0 +1,73 @@
+╔══════════════════════════════════════════════════════════╗
+║     ECO-AI Streamlit App — How To Run                    ║
+╚══════════════════════════════════════════════════════════╝
+
+── STEP 1: Extract the zip ─────────────────────────────────
+  Windows:   Right-click zip → Extract All
+  Mac/Linux: unzip eco-ai-streamlit.zip
+
+── STEP 2: Go into the folder ──────────────────────────────
+  cd eco-ai-streamlit
+
+── STEP 3: Install dependencies ────────────────────────────
+  pip install -r requirements.txt
+
+  (Takes ~1-2 minutes first time)
+
+── STEP 4: Run the app ─────────────────────────────────────
+  streamlit run app.py
+
+  Browser opens automatically at:  http://localhost:8501
+
+── WHAT YOU'LL SEE ──────────────────────────────────────────
+  Dark green-on-black industrial dashboard.
+  Sidebar with 10 pages — click any page.
+  Change any slider/input → all charts update instantly.
+
+── THE 10 PAGES ─────────────────────────────────────────────
+
+  🏠  Overview Dashboard
+      KPIs, monthly CI trend, hourly profile,
+      CI class pie chart, model accuracy cards
+
+  🌡  Carbon Intensity Predictor
+      Input: CI, wind, temp, hour, month
+      Output: Clean/Dirty class + confidence bars
+              + 24h chart with your hour highlighted
+
+  🌿  Renewable % Predictor
+      Input: Wind, solar MW, cloud, hour
+      Output: Renewable class + probability chart
+              + hourly renewable & generation charts
+
+  🏅  Green Score Predictor
+      Input: Grid conditions
+      Output: Gauge meter (A+ to D) + monthly score bars
+
+  💨  CO₂ Emission Predictor
+      Input: GPU, count, hours, grid CI
+      Output: kg CO₂ + impact (trees/km/phone charges)
+              + country comparison bar chart
+              + sensitivity curve
+
+  ⏰  Smart Scheduler
+      Input: Duration, month
+      Output: Best/worst hour, savings %, annotated bar chart
+
+  🔍  Anomaly Detector
+      Input: Scan window, sigma threshold
+      Output: Time series + anomaly markers + log table
+
+  🌍  Country Comparator
+      Input: GPU, count, hours, PUE
+      Output: CO₂ + renewable for 8 countries
+
+  📊  Model Performance
+      Accuracy bars, dataset sizes, feature lists
+
+  📈  Dataset Explorer (4 tabs)
+      Grid data · Training runs · Country data · Carbon budget
+
+── QUICK COPY-PASTE ─────────────────────────────────────────
+  pip install -r requirements.txt
+  streamlit run app.py
